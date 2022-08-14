@@ -14,5 +14,10 @@ import { Intro } from '../sections/intro/Intro'
   </head>
   <body>
     <Intro client:load />
+
+    <script is:inline>
+      const vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    </script>
   </body>
 </html>

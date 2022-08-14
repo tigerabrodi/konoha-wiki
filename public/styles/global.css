@@ -3,6 +3,10 @@
   --colors-red: #de4335;
   --colors-pink: #ff7e42;
   --colors-yellow: #f0c528;
+
+  --md-breakpoint: 48rem;
+  --lg-breakpoint: 64rem;
+  --xl-breakpoint: 93.75rem;
 }
 
 *,
