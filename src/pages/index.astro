@@ -1,32 +1,32 @@
 ---
 // Component Imports
-import Counter from '../components/Counter';
+import Counter from '../components/Counter'
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		    <title>Konoha Wiki</title>
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
-	</head>
-	<body>
-		<main>
-			<Counter client:visible />
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Konoha Wiki</title>
+    <style>
+      html,
+      body {
+        font-family: system-ui;
+        margin: 0;
+      }
+      body {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <Counter client:visible />
+    </main>
+  </body>
 </html>
