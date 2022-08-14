@@ -12,6 +12,7 @@ import Counter from '../components/Counter';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		    <title>Konoha Wiki</title>
 		<style>
 			html,
 			body {
@@ -25,9 +26,7 @@ import Counter from '../components/Counter';
 	</head>
 	<body>
 		<main>
-			<Counter client:visible>
-				<h1>Hello, Solid!</h1>
-			</Counter>
+			<Counter client:visible />
 		</main>
 	</body>
 </html>
