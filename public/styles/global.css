@@ -1,0 +1,40 @@
+:root {
+  --colors-brown: #090b0b;
+  --colors-red: #de4335;
+  --colors-pink: #ff7e42;
+  --colors-yellow: #f0c528;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Rubik';
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: var(--colors-brown);
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.text-with-gradient-core {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
