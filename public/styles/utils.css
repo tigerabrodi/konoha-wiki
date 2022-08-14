@@ -1,0 +1,23 @@
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.text-with-gradient {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.section {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  max-width: 2500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
