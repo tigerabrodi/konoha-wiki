@@ -1,6 +1,7 @@
 .intro__section {
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
+  max-width: 2500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +32,7 @@
   margin-top: calc(var(--vh, 1vh) * 6);
 }
 
-/* @media screen and (min-width: 48rem) {
+@media screen and (min-width: 48rem) {
   .intro__main-art {
     width: 300px;
     margin-top: 50px;
@@ -40,9 +41,21 @@
   .intro__subtitle {
     font-size: calc(1rem * 26 / 16);
     margin-top: 30px;
+    width: 40ch;
   }
 
   .intro__naruto-sasuke-art {
-    width: 75%;
+    max-width: 450px;
+    margin-top: 3vw;
   }
-} */
+}
+
+@media screen and (min-width: 93.75rem) {
+  .intro__main-art {
+    margin-top: 60px;
+  }
+
+  .intro__naruto-sasuke-art {
+    max-width: 500px;
+  }
+}

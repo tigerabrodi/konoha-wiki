@@ -26,6 +26,9 @@ body {
   box-sizing: border-box;
   height: 100%;
   background-color: var(--colors-brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sr-only {
