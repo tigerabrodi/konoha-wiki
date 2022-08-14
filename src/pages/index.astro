@@ -1,9 +1,6 @@
 ---
-// Component Imports
-import Counter from '../components/Counter'
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import '@fontsource/rubik'
+import { Intro } from '../sections/intro/Intro'
 ---
 
 <html lang="en">
@@ -12,21 +9,10 @@ import Counter from '../components/Counter'
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles/global.css" />
     <title>Konoha Wiki</title>
-    <style>
-      html,
-      body {
-        font-family: system-ui;
-        margin: 0;
-      }
-      body {
-        padding: 2rem;
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <Counter client:visible />
-    </main>
+    <Intro client:load />
   </body>
 </html>

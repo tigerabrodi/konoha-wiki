@@ -16,6 +16,7 @@
     "prettier-plugin-astro": "^0.5.0"
   },
   "dependencies": {
+    "@fontsource/rubik": "^4.5.11",
     "solid-js": "^1.4.3"
   }
 }
