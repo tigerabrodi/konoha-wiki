@@ -1,12 +1,3 @@
-.intro__section {
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
-  max-width: 2500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .intro__main-art {
   width: 220px;
   margin-top: 25px;
