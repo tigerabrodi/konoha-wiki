@@ -1,33 +1,36 @@
+import { createSignal } from 'solid-js'
 import { NarutoStoryArt } from '../../arts/NarutoStoryArt'
+import { storyChapters } from '../../lib/constants'
 import './Story.css'
 import { StoryDialog } from './StoryDialog'
 
+const firstStoryContent = storyChapters[0].content[0]
+
+const secondStoryContent = storyChapters[0].content[1]
+
 export function Story() {
+  const [isStoryDialogOpen, setIsStoryDialogOpen] = createSignal(false)
+
   return (
     <>
       <section class="section">
         <h1 class="text-with-gradient story__heading">Story</h1>
         <div class="story__intro">
           <h2 class="text-with-gradient story__intro-heading">Intro</h2>
-          <p class="story__intro-text">
-            Before the story, shortly after the birth of Naruto, the Nine-Tailed
-            beast attacked Konoha (his village). As a result both his parents
-            died. His father Minato Namikaze sacrificed himself as the leader of
-            the village at the time (fourth Hokage) and sealed the Nine-Tails
-            into Naruto.
-          </p>
-          <p class="story__intro-text">
-            Naruto became an orphan and was shunned by the villagers, who out of
-            fear and anger, viewed him as the Nine-Tails itself. No one spoke
-            about the Nine-Tails since it became law not to speak about it, this
-            was done so that it didn’t become worldly known that Naruto had a
-            part of Nine-Tails inside of him.
-          </p>
+          <p class="story__intro-text">{firstStoryContent}</p>
+          <p class="story__intro-text">{secondStoryContent}</p>
         </div>
-        <button class="story__intro-button">Full Story</button>
+        <button
+          class="story__intro-button"
+          onClick={() => setIsStoryDialogOpen(true)}
+        >
+          Full Story
+        </button>
         <NarutoStoryArt class="story__art" />
       </section>
-      <StoryDialog />
+      {isStoryDialogOpen() && (
+        <StoryDialog onClose={() => setIsStoryDialogOpen(false)} />
+      )}
     </>
   )
 }

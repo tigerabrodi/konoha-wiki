@@ -1,6 +1,6 @@
 import { generateUniqueIds } from '../lib/utils'
 
-export function CloseIcon(props: { class: string }) {
+export function CloseIcon(props: { class?: string }) {
   const uniqueIdsForUrlsInSVG = generateUniqueIds(1)
 
   return (
