@@ -1,0 +1,55 @@
+.story__heading {
+  background-image: linear-gradient(
+    to bottom,
+    var(--colors-yellow),
+    var(--colors-red)
+  );
+  font-weight: 600;
+  font-size: calc(1rem * 40 / 16);
+}
+
+.story__intro {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 350px;
+  margin-top: 10px;
+}
+
+.story__intro-heading {
+  font-weight: 600;
+  font-size: calc(1rem * 30 / 16);
+  background-image: linear-gradient(
+    to bottom,
+    var(--colors-yellow),
+    var(--colors-red)
+  );
+}
+
+.story__intro-text {
+  font-weight: 400;
+  font-size: calc(1rem * 14 / 16);
+  color: var(--colors-pink);
+  margin-top: 10px;
+  line-height: 1.3;
+}
+
+.story__intro-button {
+  font-weight: 600;
+  color: var(--colors-brown);
+  padding: 6px 13px;
+  border-radius: 2px;
+  border: none;
+  margin-top: 30px;
+  font-size: calc(1rem * 16 / 16);
+  background-image: linear-gradient(
+    to bottom,
+    var(--colors-yellow),
+    var(--colors-red)
+  );
+}
+
+.story__art {
+  width: 150px;
+  margin-top: 30px;
+}
