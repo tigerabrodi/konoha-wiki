@@ -67,3 +67,39 @@
   margin-top: 10px;
   line-height: 1.4;
 }
+
+@media screen and (min-width: 48rem) {
+  .story__dialog-art-wrapper {
+    width: 250px;
+    height: 1250px;
+    margin-top: 20px;
+  }
+
+  .story__dialog {
+    padding: 0 20px 20px;
+  }
+
+  .story__dialog__chapter {
+    max-width: 90%;
+    margin-top: 45px;
+  }
+
+  .story__dialog__chapter-heading {
+    font-size: calc(1rem * 44 / 16);
+  }
+
+  .story__dialog__chapter-content {
+    font-size: calc(1rem * 20 / 16);
+    margin-top: 15px;
+  }
+
+  .story__dialog-close {
+    top: 22px;
+    right: 22px;
+  }
+
+  .story__dialog-close svg {
+    width: 22px;
+    height: 22px;
+  }
+}
