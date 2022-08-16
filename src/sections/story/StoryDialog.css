@@ -71,7 +71,7 @@
 @media screen and (min-width: 48rem) {
   .story__dialog-art-wrapper {
     width: 250px;
-    height: 1250px;
+    height: 125px;
     margin-top: 20px;
   }
 
@@ -101,5 +101,47 @@
   .story__dialog-close svg {
     width: 22px;
     height: 22px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .story__dialog-art-wrapper {
+    width: 260px;
+    height: 130px;
+  }
+
+  .story__dialog {
+    padding: 0 30px 30px;
+  }
+
+  .story__dialog__chapter {
+    width: 85%;
+    max-width: 1200px;
+    margin-top: 55px;
+  }
+
+  .story__dialog__chapter-heading {
+    font-size: calc(1rem * 48 / 16);
+  }
+
+  .story__dialog__chapter-content {
+    font-size: calc(1rem * 24 / 16);
+  }
+
+  .story__dialog-close {
+    top: 26px;
+    right: 26px;
+  }
+
+  .story__dialog-close svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .story__dialog-art-wrapper {
+    width: 320px;
+    height: 160px;
   }
 }
