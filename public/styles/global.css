@@ -30,3 +30,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+button {
+  cursor: pointer;
+}
