@@ -29,7 +29,10 @@ export function Story() {
         <NarutoStoryArt class="story__art" />
       </section>
       {isStoryDialogOpen() && (
-        <StoryDialog onClose={() => setIsStoryDialogOpen(false)} />
+        <StoryDialog
+          onClose={() => setIsStoryDialogOpen(false)}
+          isOpen={isStoryDialogOpen}
+        />
       )}
     </>
   )

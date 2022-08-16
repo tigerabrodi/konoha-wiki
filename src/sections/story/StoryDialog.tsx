@@ -1,14 +1,20 @@
-import { For } from 'solid-js'
+import { Accessor, For } from 'solid-js'
 import { NarutoFullStoryArt } from '../../arts/NarutoFullStoryArt'
 import { CloseIcon } from '../../icons/CloseIcon'
 import { storyChapters } from '../../lib/constants'
+import { createFocusTrap } from '../../primitives/createFocusTrap'
 import { useClickOutside } from '../../primitives/useClickOutside'
 import './StoryDialog.css'
 
-export function StoryDialog(props: { onClose: () => void }) {
+export function StoryDialog(props: {
+  onClose: () => void
+  isOpen: Accessor<boolean>
+}) {
   let containerElement: HTMLDivElement | undefined
 
   useClickOutside(() => containerElement, props.onClose)
+
+  createFocusTrap(props.isOpen, () => containerElement)
 
   return (
     <>
