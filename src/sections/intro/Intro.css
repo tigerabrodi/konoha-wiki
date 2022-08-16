@@ -26,7 +26,7 @@
 @media screen and (min-width: 48rem) {
   .intro__main-art {
     width: 300px;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .intro__subtitle {
@@ -41,12 +41,24 @@
   }
 }
 
-@media screen and (min-width: 93.75rem) {
+@media screen and (min-width: 87.5rem) {
+  .intro__naruto-sasuke-art {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 125rem) {
   .intro__main-art {
-    margin-top: 60px;
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  .intro__subtitle {
+    font-size: calc(1rem * 28 / 16);
+    margin-top: 35px;
   }
 
   .intro__naruto-sasuke-art {
-    max-width: 500px;
+    max-width: 700px;
   }
 }
