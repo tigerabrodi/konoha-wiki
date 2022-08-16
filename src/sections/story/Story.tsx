@@ -4,9 +4,9 @@ import { storyChapters } from '../../lib/constants'
 import './Story.css'
 import { StoryDialog } from './StoryDialog'
 
-const firstStoryContent = storyChapters[0].content[0]
+const firstChapterFirstContent = storyChapters[0].content[0]
 
-const secondStoryContent = storyChapters[0].content[1]
+const firstChapterSecondContent = storyChapters[0].content[1]
 
 export function Story() {
   const [isStoryDialogOpen, setIsStoryDialogOpen] = createSignal(false)
@@ -14,14 +14,18 @@ export function Story() {
   return (
     <>
       <section class="section">
-        <h1 class="text-with-gradient story__heading">Story</h1>
+        <h1 class="text-with-gradient gradient-to-bottom story__heading">
+          Story
+        </h1>
         <div class="story__intro">
-          <h2 class="text-with-gradient story__intro-heading">Intro</h2>
-          <p class="story__intro-text">{firstStoryContent}</p>
-          <p class="story__intro-text">{secondStoryContent}</p>
+          <h2 class="text-with-gradient gradient-to-bottom story__intro-heading">
+            Intro
+          </h2>
+          <p class="story__intro-text">{firstChapterFirstContent}</p>
+          <p class="story__intro-text">{firstChapterSecondContent}</p>
         </div>
         <button
-          class="story__intro-button"
+          class="story__intro-button gradient-to-bottom"
           onClick={() => setIsStoryDialogOpen(true)}
         >
           Full Story

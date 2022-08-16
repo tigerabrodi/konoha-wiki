@@ -52,14 +52,6 @@
   margin-top: 25px;
 }
 
-.story__dialog__chapter-heading {
-  background-image: linear-gradient(
-    to bottom,
-    var(--colors-yellow),
-    var(--colors-red)
-  );
-}
-
 .story__dialog__chapter-content {
   font-weight: 400;
   font-size: calc(1rem * 12 / 16);

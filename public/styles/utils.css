@@ -13,6 +13,22 @@
   -webkit-background-clip: text;
 }
 
+.gradient-to-right {
+  background-image: linear-gradient(
+    to right,
+    var(--colors-yellow),
+    var(--colors-red)
+  );
+}
+
+.gradient-to-bottom {
+  background-image: linear-gradient(
+    to bottom,
+    var(--colors-yellow),
+    var(--colors-red)
+  );
+}
+
 .section {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;

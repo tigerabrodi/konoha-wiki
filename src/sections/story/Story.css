@@ -1,9 +1,4 @@
 .story__heading {
-  background-image: linear-gradient(
-    to bottom,
-    var(--colors-yellow),
-    var(--colors-red)
-  );
   font-weight: 600;
   font-size: calc(1rem * 40 / 16);
 }
@@ -19,11 +14,6 @@
 .story__intro-heading {
   font-weight: 600;
   font-size: calc(1rem * 30 / 16);
-  background-image: linear-gradient(
-    to bottom,
-    var(--colors-yellow),
-    var(--colors-red)
-  );
 }
 
 .story__intro-text {
@@ -41,11 +31,6 @@
   border-radius: 2px;
   margin-top: 30px;
   font-size: calc(1rem * 16 / 16);
-  background-image: linear-gradient(
-    to bottom,
-    var(--colors-yellow),
-    var(--colors-red)
-  );
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 

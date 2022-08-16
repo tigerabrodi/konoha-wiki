@@ -35,7 +35,7 @@ export function StoryDialog(props: {
         <For each={storyChapters}>
           {(chapter) => (
             <div class="story__dialog__chapter">
-              <h2 class="text-with-gradient story__dialog__chapter-heading">
+              <h2 class="text-with-gradient gradient-to-bottom story__dialog__chapter-heading">
                 {chapter.chapter}
               </h2>
 
