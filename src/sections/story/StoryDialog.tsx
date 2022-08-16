@@ -2,13 +2,18 @@ import { For } from 'solid-js'
 import { NarutoFullStoryArt } from '../../arts/NarutoFullStoryArt'
 import { CloseIcon } from '../../icons/CloseIcon'
 import { storyChapters } from '../../lib/constants'
+import { useClickOutside } from '../../primitives/useClickOutside'
 import './StoryDialog.css'
 
 export function StoryDialog(props: { onClose: () => void }) {
+  let containerElement: HTMLDivElement | undefined
+
+  useClickOutside(() => containerElement, props.onClose)
+
   return (
     <>
       <div class="story__dialog-overlay" />
-      <div role="dialog" class="story__dialog">
+      <div role="dialog" class="story__dialog" ref={containerElement}>
         <h1 class="sr-only">Naruto full story</h1>
         <button
           type="button"
