@@ -53,3 +53,37 @@
   width: 150px;
   margin-top: 30px;
 }
+
+@media screen and (min-width: 48rem) {
+  .story__heading {
+    font-size: calc(1rem * 60 / 16);
+    margin-top: 20px;
+  }
+
+  .story__intro {
+    max-width: 650px;
+  }
+
+  .story__intro-heading {
+    font-size: calc(1rem * 46 / 16);
+  }
+
+  .story__intro-text {
+    font-size: calc(1rem * 22 / 16);
+    margin-top: 13px;
+  }
+
+  .story__intro-button {
+    font-size: calc(1rem * 24 / 16);
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
+
+  .story__art {
+    width: 300px;
+    margin-top: calc(30px + 5vh);
+  }
+}
+
+/* @media screen and (min-width: 93.75rem) {
+} */
