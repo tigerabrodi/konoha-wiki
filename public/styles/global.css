@@ -33,4 +33,12 @@ body {
 
 button {
   cursor: pointer;
+  border: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px black;
 }
