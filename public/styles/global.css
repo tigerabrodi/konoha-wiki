@@ -4,9 +4,11 @@
   --colors-pink: #ff7e42;
   --colors-yellow: #f0c528;
 
+  /* Used for reference, but they can't actually be used as breakpoints inside of media queries. */
   --md-breakpoint: 48rem;
   --lg-breakpoint: 64rem;
-  --xl-breakpoint: 93.75rem;
+  --xl-breakpoint: 87.5rem;
+  --xxl-breakpoint: 125rem;
 }
 
 *,
