@@ -46,6 +46,7 @@
     var(--colors-yellow),
     var(--colors-red)
   );
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .story__art {
