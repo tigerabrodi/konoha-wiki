@@ -1,6 +1,7 @@
+import type { ClassProps } from '../lib/types'
 import { generateUniqueIds } from '../lib/utils'
 
-export function CloseIcon(props: { class?: string }) {
+export function CloseIcon(props: ClassProps) {
   const uniqueIdsForUrlsInSVG = generateUniqueIds(1)
 
   return (

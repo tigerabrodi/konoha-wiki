@@ -1,6 +1,7 @@
+import type { ClassProps } from '../lib/types'
 import { generateUniqueIds } from '../lib/utils'
 
-export function NarutoFullStoryArt(props: { class: string }) {
+export function NarutoFullStoryArt(props: ClassProps) {
   const uniqueIdsForUrlsInSVG = generateUniqueIds(10)
 
   return (

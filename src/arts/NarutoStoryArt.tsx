@@ -1,4 +1,6 @@
-export function NarutoStoryArt(props: { class: string }) {
+import type { ClassProps } from '../lib/types'
+
+export function NarutoStoryArt(props: ClassProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
