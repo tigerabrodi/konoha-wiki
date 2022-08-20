@@ -85,6 +85,20 @@ export function Characters() {
       <div class="characters__character">
         {charactersContent[characterValue()].art}
         <div class="characters__character-spotlight" />
+
+        <button
+          class="characters__selection-button characters__selection-button-desktop characters__selection-button-right"
+          onClick={() => switchCharacter('right')}
+        >
+          <RightArrow />
+        </button>
+
+        <button
+          class="characters__selection-button characters__selection-button-desktop characters__selection-button-left"
+          onClick={() => switchCharacter('left')}
+        >
+          <LeftArrow />
+        </button>
       </div>
       <h2 class="characters__fullname text-with-gradient gradient-to-right">
         {charactersContent[characterValue()].fullname}
@@ -97,7 +111,7 @@ export function Characters() {
 
       <div class="characters__selection">
         <button
-          class="characters__selection-button"
+          class="characters__selection-button characters__selection-button-mobile"
           onClick={() => switchCharacter('left')}
         >
           <LeftArrow />
@@ -128,7 +142,7 @@ export function Characters() {
         </div>
 
         <button
-          class="characters__selection-button"
+          class="characters__selection-button characters__selection-button-mobile"
           onClick={() => switchCharacter('right')}
         >
           <RightArrow />
