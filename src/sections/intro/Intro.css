@@ -13,9 +13,9 @@
 }
 
 .intro__naruto-sasuke-art {
-  width: 75%;
+  width: 80%;
   max-width: 320px;
-  margin-top: calc(var(--vh, 1vh) * 6);
+  margin: auto 0;
 }
 
 @media screen and (min-width: 48rem) {
@@ -32,7 +32,6 @@
 
   .intro__naruto-sasuke-art {
     max-width: 450px;
-    margin-top: 3vw;
   }
 }
 
