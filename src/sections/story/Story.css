@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 48rem) {
   .story__heading {
-    font-size: calc(1rem * 60 / 16);
+    font-size: calc(1rem * 65 / 16);
     margin-top: 20px;
   }
 
