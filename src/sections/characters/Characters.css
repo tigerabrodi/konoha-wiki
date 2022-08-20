@@ -122,4 +122,66 @@
 }
 
 @media screen and (min-width: 48rem) {
+  .characters__heading {
+    font-size: calc(1rem * 65 / 16);
+  }
+
+  .characters__character {
+    height: 350px;
+  }
+
+  .characters__character-spotlight {
+    width: 250px;
+    height: 150px;
+    bottom: -60px;
+  }
+
+  .characters__fullname {
+    font-size: calc(1rem * 52 / 16);
+    margin-top: 35px;
+  }
+
+  .characters__bio {
+    height: 250px;
+  }
+
+  .characters__bio-text {
+    font-size: calc(1rem * 22 / 16);
+    width: 75%;
+    line-height: 1.2;
+    margin-top: 20px;
+  }
+
+  .characters__bio-text:first-of-type {
+    margin-top: 0;
+  }
+
+  .characters__selection {
+    width: 70%;
+  }
+
+  .characters__selection-button {
+    width: 25px;
+    height: 25px;
+    outline: var(--colors-pink) solid 2px;
+    outline-offset: 5px;
+  }
+
+  .characters__selection-button svg {
+    width: 15px;
+  }
+
+  .characters__selection-character-wrapper {
+    column-gap: 60px;
+  }
+
+  .characters__selection-character-art {
+    height: 80px;
+  }
+
+  .characters__selection-character-input:checked
+    + .characters__selection-character-label
+    .characters__selection-character-art {
+    height: 85px;
+  }
 }
