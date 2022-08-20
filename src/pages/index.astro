@@ -3,6 +3,7 @@ import '@fontsource/rubik'
 import { Characters } from '../sections/characters/Characters'
 import { Intro } from '../sections/intro/Intro'
 import { Story } from '../sections/story/Story'
+import { Writing } from '../sections/writing/Writing'
 ---
 
 <html lang="en">
@@ -19,6 +20,7 @@ import { Story } from '../sections/story/Story'
     <Intro client:load />
     <Story client:idle />
     <Characters client:idle />
+    <Writing client:idle />
 
     <script is:inline>
       const vh = window.innerHeight * 0.01
