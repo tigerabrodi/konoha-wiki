@@ -1,0 +1,125 @@
+.characters__section {
+  display: grid;
+  grid-template-areas: 'heading' 'character' 'fullname' 'bio' 'selection';
+  justify-content: space-between;
+  justify-items: center;
+  padding-bottom: 10px;
+}
+
+.characters__heading {
+  font-size: calc(1rem * 40 / 16);
+  font-weight: 600;
+  grid-area: heading;
+  margin-top: 10px;
+}
+
+.characters__character {
+  height: 190px;
+  margin-top: 10px;
+  position: relative;
+  grid-area: character;
+}
+
+.characters__character-art {
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.characters__character-spotlight {
+  background: radial-gradient(
+    var(--colors-light-brown) 20%,
+    var(--colors-brown) 55%
+  );
+  border-radius: 50%;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.characters__fullname {
+  grid-area: fullname;
+  font-size: calc(1rem * 30 / 16);
+  font-weight: 500;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.characters__bio {
+  grid-area: bio;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 170px;
+}
+
+.characters__bio-text {
+  margin-top: 10px;
+  font-size: calc(1rem * 12 / 16);
+  font-weight: 400;
+  color: var(--colors-pink);
+  text-align: center;
+  width: 90%;
+}
+
+.characters__bio-text:first-of-type {
+  margin-top: 5px;
+}
+
+.characters__selection {
+  grid-area: selection;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 15px;
+}
+
+.characters__selection-button {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: var(--colors-pink);
+  box-shadow: 0 0 12px #ff7e4244;
+  outline: var(--colors-pink) solid 2px;
+  outline-offset: 3px;
+}
+
+.characters__selection-button svg {
+  width: 8px;
+}
+
+.characters__selection-character-wrapper {
+  display: flex;
+  align-items: baseline;
+  column-gap: 35px;
+}
+
+.characters__selection-character-label {
+  cursor: pointer;
+}
+
+.characters__selection-character-art {
+  height: 55px;
+  opacity: 0.4;
+  transition: 200ms all ease-out;
+}
+
+.characters__selection-character-input:checked
+  + .characters__selection-character-label
+  .characters__selection-character-art {
+  height: 60px;
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #ff7e4241);
+}
+
+@media screen and (min-width: 48rem) {
+}
