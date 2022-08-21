@@ -1,6 +1,20 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .intro__main-art {
   width: 220px;
   margin-top: 25px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp forwards 250ms ease-out 100ms;
 }
 
 .intro__subtitle {
@@ -10,12 +24,19 @@
   font-size: calc(1rem * 16 / 16);
   font-weight: 600;
   margin-top: 22px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp forwards 250ms ease-out 250ms;
 }
 
 .intro__naruto-sasuke-art {
   width: 80%;
   max-width: 320px;
   margin: auto 0;
+  will-change: clip-path, transform, opacity;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp forwards 400ms ease-out 450ms;
 }
 
 @media screen and (min-width: 48rem) {
