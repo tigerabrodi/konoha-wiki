@@ -1,5 +1,5 @@
 import './Writing.css'
-import masashiReadingImage from '../../assets/masashi-reading.webp'
+import { ManWritingArt } from '../../arts/ManWritingArt'
 
 export function Writing() {
   return (
@@ -20,8 +20,8 @@ export function Writing() {
         </p>
       </div>
 
-      <div class="writing__image">
-        <img src={masashiReadingImage} alt="masashi reading" />
+      <div class="writing__art-wrapper">
+        <ManWritingArt class="writing__art" />
       </div>
     </section>
   )

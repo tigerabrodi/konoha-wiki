@@ -22,14 +22,22 @@
   font-weight: 400;
 }
 
-.writing__image {
-  height: calc(280px + 5vh);
+.writing__art-wrapper {
+  height: 55%;
   margin: auto 0;
+  width: 90%;
+  background: radial-gradient(
+    var(--colors-light-brown) 20%,
+    var(--colors-brown) 70%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.writing__image img {
+.writing__art {
   height: 100%;
-  border-radius: 2px;
 }
 
 @media screen and (min-width: 48rem) {
@@ -51,10 +59,6 @@
   .writing__info {
     width: 90%;
     margin-top: 25px;
-  }
-
-  .writing__image {
-    height: 600px;
   }
 }
 
@@ -80,9 +84,5 @@
 
   .writing__info-text {
     font-size: calc(1rem * 26 / 16);
-  }
-
-  .writing__image {
-    height: 900px;
   }
 }
