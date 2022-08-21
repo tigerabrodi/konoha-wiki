@@ -4,13 +4,13 @@
   justify-content: space-between;
   justify-items: center;
   padding-bottom: 10px;
+  margin-top: 20px;
 }
 
 .characters__heading {
   font-size: calc(1rem * 40 / 16);
   font-weight: 600;
   grid-area: heading;
-  margin-top: 10px;
 }
 
 .characters__character {
