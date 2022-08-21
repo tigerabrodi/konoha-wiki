@@ -57,3 +57,32 @@
     height: 600px;
   }
 }
+
+@media screen and (min-width: 87.5rem) {
+  .writing__info {
+    width: 1000px;
+  }
+
+  .writing__heading {
+    font-size: calc(1rem * 96 / 16);
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 125rem) {
+  .writing__info {
+    width: 1200px;
+  }
+
+  .writing__info-heading {
+    font-size: calc(1rem * 50 / 16);
+  }
+
+  .writing__info-text {
+    font-size: calc(1rem * 26 / 16);
+  }
+
+  .writing__image {
+    height: 900px;
+  }
+}
