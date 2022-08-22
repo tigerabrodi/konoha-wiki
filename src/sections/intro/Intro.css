@@ -33,7 +33,7 @@
   width: 80%;
   max-width: 320px;
   margin: auto 0;
-  will-change: clip-path, transform, opacity;
+  filter: drop-shadow(2px 4px 6px black);
   opacity: 0;
   transform: translateY(10px);
   animation: fadeUp forwards 400ms ease-out 450ms;
