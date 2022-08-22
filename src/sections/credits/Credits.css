@@ -93,7 +93,7 @@
   }
 
   .credits__wrapper {
-    max-width: 750px;
+    max-width: 620px;
   }
 
   .credits__item {
@@ -107,7 +107,7 @@
   }
 
   .credits__item-text {
-    font-size: calc(1rem * 30 / 16);
+    font-size: calc(1rem * 25 / 16);
   }
 
   .credits__item-link::after {
