@@ -35,8 +35,18 @@
 }
 
 .story__art {
-  width: 150px;
-  margin-top: 30px;
+  max-width: 180px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 23.125rem) {
+  .story__art {
+    margin: auto 0;
+  }
+
+  .story__intro-button {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 48rem) {
@@ -63,6 +73,7 @@
     padding: 10px 20px;
     margin-top: 50px;
     transition: all 300ms ease-in;
+    margin-bottom: 0;
   }
 
   .story__intro-button:hover {
@@ -78,7 +89,6 @@
 
   .story__art {
     width: 300px;
-    margin-top: calc(30px + 5vh);
   }
 }
 
@@ -105,10 +115,6 @@
     font-size: calc(1rem * 28 / 16);
     padding: 12px 24px;
     margin-top: 60px;
-  }
-
-  .story__art {
-    margin-top: 50px;
   }
 }
 
@@ -138,7 +144,6 @@
   }
 
   .story__art {
-    margin-top: 130px;
     width: 400px;
   }
 }
