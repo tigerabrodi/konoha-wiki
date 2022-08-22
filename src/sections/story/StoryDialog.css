@@ -10,7 +10,7 @@
   position: fixed;
   height: calc(var(--vh, 1vh) * 95);
   width: 90%;
-  z-index: 10;
+  z-index: 100;
   background-color: var(--colors-brown);
   box-shadow: 0 0 5px #ff7e4250;
   border-radius: 2px;
