@@ -25,7 +25,7 @@
 }
 
 .story__dialog::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
   background-color: var(--colors-light-brown);
 }
 
