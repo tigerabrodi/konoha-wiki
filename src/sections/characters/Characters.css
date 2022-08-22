@@ -281,6 +281,11 @@
     height: 110px;
   }
 
+  .characters__selection-character-art:hover {
+    opacity: 0.8;
+    transform: scale(1.005);
+  }
+
   .characters__selection-character-input:checked
     + .characters__selection-character-label
     .characters__selection-character-art {
