@@ -24,6 +24,26 @@
   padding: 0 10px 10px;
 }
 
+.story__dialog::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--colors-light-brown);
+}
+
+.story__dialog::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.story__dialog::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--colors-yellow),
+    var(--colors-red)
+  );
+  border: 0.1rem solid #090b0b;
+}
+
 .story__dialog-close {
   position: absolute;
   top: 14px;
