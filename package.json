@@ -11,8 +11,10 @@
   },
   "devDependencies": {
     "@astrojs/solid-js": "^1.0.0",
+    "@testing-library/cypress": "^8.0.3",
     "@types/uuid": "^8.3.4",
     "astro": "^1.0.5",
+    "cypress": "^10.6.0",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.0"
   },

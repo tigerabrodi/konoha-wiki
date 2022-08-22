@@ -14,7 +14,7 @@ const characterIds = {
   itachi: 'itachi',
 } as const
 
-const charactersContent = {
+export const charactersContent = {
   naruto: {
     fullname: 'Naruto Uzumaki',
     bio: [
@@ -84,11 +84,12 @@ export function Characters() {
       </h1>
       <div class="characters__character">
         {charactersContent[characterValue()].art}
-        <div class="characters__character-spotlight" />
+        <div class="characters__character-spotlight" aria-hidden="true" />
 
         <button
           class="characters__selection-button characters__selection-button-desktop characters__selection-button-right"
           onClick={() => switchCharacter('right')}
+          aria-label="Select character to the right"
         >
           <RightArrow />
         </button>
@@ -96,6 +97,7 @@ export function Characters() {
         <button
           class="characters__selection-button characters__selection-button-desktop characters__selection-button-left"
           onClick={() => switchCharacter('left')}
+          aria-label="Select character to the left"
         >
           <LeftArrow />
         </button>
@@ -113,6 +115,7 @@ export function Characters() {
         <button
           class="characters__selection-button characters__selection-button-mobile"
           onClick={() => switchCharacter('left')}
+          aria-label="Select character to the left"
         >
           <LeftArrow />
         </button>
@@ -144,6 +147,7 @@ export function Characters() {
         <button
           class="characters__selection-button characters__selection-button-mobile"
           onClick={() => switchCharacter('right')}
+          aria-label="Select character to the right"
         >
           <RightArrow />
         </button>

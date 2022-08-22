@@ -6,6 +6,7 @@ export function NarutoCharacterArt(props: ClassProps) {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 120 234"
+      aria-hidden="true"
       class={props.class}
     >
       <path

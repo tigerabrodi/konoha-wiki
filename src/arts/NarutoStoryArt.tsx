@@ -8,6 +8,7 @@ export function NarutoStoryArt(props: ClassProps) {
       viewBox="0 0 88 128"
       id="NarutoStoryArt"
       class={props.class}
+      aria-hidden="true"
     >
       <path
         fill="url(#a)"

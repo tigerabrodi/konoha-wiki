@@ -6,6 +6,7 @@ export function ItachiCharacterArt(props: ClassProps) {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 157 267"
+      aria-hidden="true"
       class={props.class}
     >
       <path

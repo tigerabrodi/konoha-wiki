@@ -10,6 +10,7 @@ export function NarutoMainArt(props: ClassProps) {
       fill="none"
       viewBox="0 0 124 53"
       id="NarutoMainArt"
+      aria-hidden="true"
       class={props.class}
     >
       <path

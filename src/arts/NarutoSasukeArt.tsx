@@ -11,6 +11,7 @@ export function NarutoSasukeArt(props: ClassProps) {
       viewBox="0 0 211 270"
       id="NarutoSasukeArt"
       class={props.class}
+      aria-hidden="true"
     >
       <path
         fill={`url(#${uniqueIdsForUrlsInSVG['1st']})`}
