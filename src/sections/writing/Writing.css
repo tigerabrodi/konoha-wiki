@@ -1,3 +1,9 @@
+@keyframes scaleUp {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 .writing__heading {
   font-size: calc(1rem * 40 / 16);
   margin-top: 15px;
@@ -38,6 +44,7 @@
 
 .writing__art {
   height: 100%;
+  animation: scaleUp infinite alternate linear 10s;
 }
 
 @media screen and (min-width: 48rem) {
