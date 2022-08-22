@@ -35,6 +35,16 @@
   font-weight: 500;
 }
 
+@media screen and (min-width: 23.125rem) {
+  .credits__wrapper {
+    max-width: 343px;
+  }
+
+  .credits__item-text {
+    font-size: calc(1rem * 14 / 16);
+  }
+}
+
 @media screen and (min-width: 48rem) {
   .credits__heading {
     font-size: calc(1rem * 65 / 16);

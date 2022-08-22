@@ -4,11 +4,13 @@
   --colors-red: #de4335;
   --colors-pink: #ff7e42;
   --colors-yellow: #f0c528;
+
   /* 
    Breakpoint reference since they've to be in rem due to accessibility.
    118.75rem - 1900px 
    125rem - 2000px
    48rem - 768px
+   23.125rem - 370px
   */
 }
 
