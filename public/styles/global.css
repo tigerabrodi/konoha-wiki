@@ -47,3 +47,23 @@ button:focus-visible {
   outline-offset: 2px;
   box-shadow: 0 0 0 5px black;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--colors-light-brown);
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--colors-yellow),
+    var(--colors-red)
+  );
+  border: 0.1rem solid #090b0b;
+}
