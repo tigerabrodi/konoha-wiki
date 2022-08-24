@@ -116,6 +116,11 @@
     padding: 12px 24px;
     margin-top: 60px;
   }
+
+  .story__art {
+    width: 230px;
+    max-width: max-content;
+  }
 }
 
 @media screen and (min-width: 125rem) {
