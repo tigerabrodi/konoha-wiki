@@ -32,10 +32,7 @@
   height: 55%;
   margin: auto 0;
   width: 90%;
-  background: radial-gradient(
-    var(--colors-light-brown) 20%,
-    var(--colors-brown) 70%
-  );
+  background: radial-gradient(#050606 20%, var(--colors-brown) 70%);
   display: flex;
   align-items: center;
   justify-content: center;
