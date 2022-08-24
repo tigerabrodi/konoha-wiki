@@ -1,0 +1,23 @@
+---
+import '@fontsource/rubik'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/utils.css" />
+    <title>Konoha Wiki</title>
+  </head>
+  <body>
+    <slot />
+
+    <script is:inline>
+      const vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    </script>
+  </body>
+</html>
