@@ -9,6 +9,10 @@
   }
 }
 
+.intro__section {
+  position: relative;
+}
+
 .intro__main-art {
   width: 220px;
   margin-top: 25px;
@@ -37,6 +41,28 @@
   opacity: 0;
   transform: translateY(10px);
   animation: fadeUp forwards 400ms ease-out 450ms;
+}
+
+.intro__video {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  top: -1px;
+}
+
+.intro__overlay {
+  position: absolute;
+  z-index: -5;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    var(--colors-brown) 10%,
+    rgba(0, 0, 0, 0.596)
+  );
 }
 
 @media screen and (min-width: 48rem) {
