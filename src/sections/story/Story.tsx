@@ -13,7 +13,7 @@ export function Story() {
 
   return (
     <>
-      <section class="section">
+      <section class="section" id="story">
         <h1 class="text-with-gradient gradient-to-bottom story__heading">
           Story
         </h1>

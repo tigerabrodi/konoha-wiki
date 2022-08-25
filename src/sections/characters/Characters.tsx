@@ -78,7 +78,7 @@ export function Characters() {
   }
 
   return (
-    <section class="section characters__section">
+    <section class="section characters__section" id="characters">
       <h1 class="text-with-gradient gradient-to-bottom characters__heading">
         Characters
       </h1>

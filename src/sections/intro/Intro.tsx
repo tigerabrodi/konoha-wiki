@@ -5,7 +5,7 @@ import NarutoSasukeFightVideo from '../../assets/naruto-sasuke-fight.mp4'
 
 export function Intro() {
   return (
-    <section class="section intro__section">
+    <section class="section intro__section" id="intro">
       <h1 class="sr-only">Intro</h1>
       <video
         src={NarutoSasukeFightVideo}

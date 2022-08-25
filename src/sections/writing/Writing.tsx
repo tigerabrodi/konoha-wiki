@@ -3,7 +3,7 @@ import { ManWritingArt } from '../../arts/ManWritingArt'
 
 export function Writing() {
   return (
-    <section class="section writing__section">
+    <section class="section writing__section" id="writing">
       <h1 class="writing__heading text-with-gradient gradient-to-bottom">
         Writing
       </h1>

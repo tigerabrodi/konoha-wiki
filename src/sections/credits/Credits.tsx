@@ -3,7 +3,7 @@ import './Credits.css'
 
 export function Credits() {
   return (
-    <section class="section">
+    <section class="section" id="credits">
       <h1 class="credits__heading text-with-gradient gradient-to-bottom">
         Credits
       </h1>
