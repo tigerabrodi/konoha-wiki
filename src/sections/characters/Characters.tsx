@@ -2,6 +2,7 @@ import { createSignal, For } from 'solid-js'
 import { ItachiCharacterArt } from '../../arts/ItachiCharacterArt'
 import { NarutoCharacterArt } from '../../arts/NarutoCharacterArt'
 import { SasukeCharacterArt } from '../../arts/SasukeCharacterArt'
+import swordMetalHitAudio from '../../assets/sword-metal-hit.mp3'
 import { LeftArrow } from '../../icons/LeftArrow'
 import { RightArrow } from '../../icons/RightArrow'
 import './Characters.css'
@@ -51,6 +52,8 @@ export function Characters() {
   const [characterValue, setCharacterValue] =
     createSignal<CharacterId>('naruto')
 
+  let audioElement: HTMLAudioElement | undefined
+
   const handleCharacterSelectionChange = (
     event: Event & { currentTarget: HTMLInputElement; target: Element }
   ) => {
@@ -58,6 +61,11 @@ export function Characters() {
   }
 
   function switchCharacter(direction: 'left' | 'right') {
+    if (audioElement) {
+      audioElement.currentTime = 0
+      audioElement.play()
+    }
+
     if (characterValue() === 'naruto') {
       const newCharacterValue = direction === 'left' ? 'sasuke' : 'itachi'
       setCharacterValue(newCharacterValue)
@@ -82,6 +90,8 @@ export function Characters() {
       <h1 class="text-with-gradient gradient-to-bottom characters__heading">
         Characters
       </h1>
+      <audio src={swordMetalHitAudio} class="sr-only" ref={audioElement} />
+
       <div class="characters__character">
         {charactersContent[characterValue()].art}
         <div class="characters__character-spotlight" aria-hidden="true" />
