@@ -54,17 +54,22 @@ export function Characters() {
 
   let audioElement: HTMLAudioElement | undefined
 
-  const handleCharacterSelectionChange = (
-    event: Event & { currentTarget: HTMLInputElement; target: Element }
-  ) => {
-    setCharacterValue((event.target as HTMLInputElement).value as CharacterId)
-  }
-
-  function switchCharacter(direction: 'left' | 'right') {
+  function playSwitchAudio() {
     if (audioElement) {
       audioElement.currentTime = 0
       audioElement.play()
     }
+  }
+
+  const handleCharacterSelectionChange = (
+    event: Event & { currentTarget: HTMLInputElement; target: Element }
+  ) => {
+    playSwitchAudio()
+    setCharacterValue((event.target as HTMLInputElement).value as CharacterId)
+  }
+
+  function switchCharacter(direction: 'left' | 'right') {
+    playSwitchAudio()
 
     if (characterValue() === 'naruto') {
       const newCharacterValue = direction === 'left' ? 'sasuke' : 'itachi'
