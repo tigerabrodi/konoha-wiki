@@ -25,9 +25,7 @@
 
 html {
   height: 100%;
-  scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-behavior: smooth;
 }
 
 button {
